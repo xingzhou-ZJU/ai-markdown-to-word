@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI内容转Word文档工具 - 支持LaTeX公式和Mermaid流程图</title>
+    <meta name="description" content="专业解决AI内容(DeepSeek/豆包/ChatGPT/Claude)和Markdown(含LaTeX公式/Mermaid图)复制到Word的格式问题。">
+    <meta name="keywords" content="AI转Word,公式转Word,Markdown转Word,DeepSeek转Word,豆包转Word,ChatGPT转Word,Claude转Word,LaTeX转Word,Mermaid转Word">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1 class="title">
+                <span class="icon">📝</span>
+                AI内容转Word文档工具
+            </h1>
+            <p class="subtitle">
+                兼容 DeepSeek/豆包/ChatGPT/Claude 等 AI 平台，支持 LaTeX 数学公式、Mermaid 流程图，完美保留格式排版
+            </p>
+        </header>
+
+        <!-- 主要内容区 -->
+        <div class="main-content">
+            <!-- 左侧编辑器 -->
+            <div class="editor-section">
+                <div class="section-header">
+                    <h2>📝 输入内容</h2>
+                    <div class="toolbar">
+                        <button class="btn btn-secondary btn-sm" id="btn-sample" title="加载示例内容">
+                            📋 示例
+                        </button>
+                        <button class="btn btn-secondary btn-sm" id="btn-clear" title="清空内容">
+                            🗑️ 清空
+                        </button>
+                    </div>
+                </div>
+                <textarea
+                    id="markdown-input"
+                    class="markdown-editor"
+                    placeholder="在此粘贴您的 Markdown 内容...
+
+支持功能：
+• 标题、段落、列表
+• LaTeX 数学公式：行内公式 $E=mc^2$，块级公式 $$...$$
+• Mermaid 流程图
+• 表格、代码块
+• 中文字符完美支持
+
+点击「📋 示例」按钮查看完整示例"
+                ></textarea>
+            </div>
+
+            <!-- 右侧预览区 -->
+            <div class="preview-section">
+                <div class="section-header">
+                    <h2>👁️ 实时预览</h2>
+                    <div class="toolbar">
+                        <button class="btn btn-secondary btn-sm" id="btn-copy-md" title="复制 Markdown">
+                            📋 复制
+                        </button>
+                    </div>
+                </div>
+                <div id="preview" class="preview-content">
+                    <div class="placeholder">预览区域 - 在左侧输入内容后自动显示</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按钮区 -->
+        <div class="action-bar">
+            <button class="btn btn-primary" id="btn-export-word">
+                📥 导出 Word 文档
+            </button>
+            <button class="btn btn-success" id="btn-export-pdf">
+                📄 导出 PDF 文档
+            </button>
+        </div>
+
+        <!-- 功能说明 -->
+        <div class="features">
+            <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <div class="feature-text">
+                    <strong>LaTeX 公式支持</strong>
+                    <p>行内公式: $E=mc^2$ | 块级公式: $$\int_0^\infty e^{-x^2}dx = \frac{\sqrt{\pi}}{2}$$</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">📊</span>
+                <div class="feature-text">
+                    <strong>Mermaid 流程图</strong>
+                    <p>支持流程图、时序图、甘特图等多种图表类型</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🌏</span>
+                <div class="feature-text">
+                    <strong>完美中文支持</strong>
+                    <p>自动使用微软雅黑字体，确保中文字符正确显示</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>💡 提示：如预览区显示不全，可尝试导出 Word 预览效果</p>
+        </footer>
+
+        <!-- 加载提示 -->
+        <div id="loading" class="loading-overlay" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>正在生成文档，请稍候...</p>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
