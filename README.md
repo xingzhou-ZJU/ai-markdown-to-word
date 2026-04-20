@@ -8,18 +8,18 @@
 
 </div>
 
-## ✨ 功能特性
+## 功能特性
 
-- 🤖 **AI 平台兼容** - 完美支持 DeepSeek、豆包、ChatGPT、Claude、Gemini、文心一言、通义千问等所有 AI 平台生成的内容
-- 🧮 **LaTeX 公式** - 完整支持数学、物理、化学公式的行内和块级公式
-- 📊 **Mermaid 图表** - 支持流程图、时序图、甘特图等多种图表类型
-- 🌏 **中文支持** - 自动使用微软雅黑字体，确保中文字符正确显示
-- 📋 **格式保留** - 完美保留标题、列表、表格、代码块等所有格式
-- ⚡ **实时预览** - 输入内容后即时预览渲染效果
-- 💾 **本地存储** - 自动保存内容，刷新页面不丢失
-- ⌨️ **快捷键支持** - Ctrl+S 快速导出 Word，Ctrl+Enter 导出 PDF
+-  **AI 平台兼容** - 完美支持 DeepSeek、豆包、ChatGPT、Claude、Gemini、文心一言、通义千问等所有 AI 平台生成的内容
+-  **LaTeX 公式** - 完整支持数学、物理、化学公式的行内和块级公式
+-  **Mermaid 图表** - 支持流程图、时序图、甘特图等多种图表类型
+-  **中文支持** - 自动使用微软雅黑字体，确保中文字符正确显示
+-  **格式保留** - 完美保留标题、列表、表格、代码块等所有格式
+-  **实时预览** - 输入内容后即时预览渲染效果
+-  **本地存储** - 自动保存内容，刷新页面不丢失
+-  **快捷键支持** - Ctrl+S 快速导出 Word，Ctrl+Enter 导出 PDF
 
-## 🚀 快速开始
+##  快速开始
 
 ### 安装依赖
 
@@ -49,7 +49,7 @@ npm run build
 npm run preview
 ```
 
-## 📖 使用说明
+##  使用说明
 
 ### 基本流程
 
@@ -130,43 +130,19 @@ function hello() {
 | Ctrl/Cmd + S | 导出 Word 文档 |
 | Ctrl/Cmd + Enter | 导出 PDF 文档 |
 
-## 📝 示例
 
-### 数学公式示例
-
-```markdown
-二次方程求根公式：
-$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
-```
-
-### 化学方程式示例
-
-```markdown
-光合作用反应：
-$$6CO_2 + 6H_2O \xrightarrow{\text{光能}} C_6H_{12}O_6 + 6O_2$$
-```
-
-### Mermaid 流程图示例
-
-\`\`\`mermaid
-graph LR
-    A[用户] --> B[AI助手]
-    B --> C[生成内容]
-    C --> D[导出Word]
-\`\`\`
-
-## 🛠️ 技术栈
+##  技术栈
 
 - **核心库**: [@m2d/md2docx](https://github.com/md2docx/md2docx) - Markdown 转 Word 文档
 - **构建工具**: [Vite](https://vitejs.dev/) - 快速的开发服务器
 - **前端**: 原生 HTML + CSS + JavaScript - 无框架依赖
 - **样式**: 现代响应式设计
 
-## 📦 项目结构
+##  项目结构
 
 ```
 workspace/
-├── package.json              # 项目配置和依赖
+├── package.json             # 项目配置和依赖
 ├── vite.config.js           # Vite 配置
 ├── index.html               # 主页面
 ├── src/
@@ -177,41 +153,6 @@ workspace/
 └── README.md              # 项目说明
 ```
 
-## ⚠️ 注意事项
-
-1. **字体要求**: 确保 Word 安装了中文字体（微软雅黑、宋体等）以获得最佳显示效果
-2. **浏览器兼容**: 推荐使用现代浏览器（Chrome、Edge、Firefox 最新版本）
-3. **文件大小**: 大型文档可能需要较长处理时间，请耐心等待
-4. **Mermaid 限制**: 非常复杂的 Mermaid 图表可能需要调整
-
-## 🌟 支持的 AI 平台
-
-- ✅ DeepSeek
-- ✅ 豆包 (字节跳动)
-- ✅ ChatGPT (OpenAI)
-- ✅ Claude (Anthropic)
-- ✅ Gemini (Google)
-- ✅ 文心一言 (百度)
-- ✅ 通义千问 (阿里)
-- ✅ 讯飞星火
-- ✅ 其他所有支持 Markdown 输出的 AI 平台
-
-## 📄 许可证
-
-MIT License
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-## 📮 联系方式
-
-如有问题或建议，欢迎通过以下方式联系：
-
-- 提交 GitHub Issue
-- 发送邮件反馈
-
----
 
 <div align="center">
 
